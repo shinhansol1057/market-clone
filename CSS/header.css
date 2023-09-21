@@ -1,0 +1,46 @@
+header {
+  padding: 10px 15px 0 15px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-bar__time {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.info-bar__icons img {
+  width: 15px;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-bar__location {
+  display: flex;
+  
+}
+
+.menu-bar__location h3{
+  font-size: 15px;
+}
+
+.menu-bar__location img {
+  width: 15px;
+  padding-top: 3px;
+}
+
+.menu-bar__icons {
+  display: flex;
+}
+
+.menu-bar__icons img {
+  width: 20px;
+  margin-left: 5px;
+}

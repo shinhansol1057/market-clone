@@ -1,0 +1,29 @@
+@import "/CSS/header.css";
+@import "/CSS/main.css";
+@import "/CSS/footer.css";
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+.media-info-msg {
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+}
+
+@media screen and (max-width:600px) {
+  .media-info-msg {
+    opacity: 0;
+  }
+}
