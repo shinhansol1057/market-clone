@@ -1,6 +1,6 @@
-@import "/CSS/header.css";
-@import "/CSS/main.css";
-@import "/CSS/footer.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";
 
 body {
   margin: 0px;
