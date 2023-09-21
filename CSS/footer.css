@@ -20,9 +20,23 @@ footer{
   cursor: pointer;
 }
 
+@keyframes icons-move {
+  0%{
+    transform: translateY(0px);
+  }50%{
+    transform: translateY(5px);
+  }100%{
+    transform: translateY(0px);
+  }
+}
+
 .footer-icons img{
   width: 20px;
-  margin-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+.footer-icons:hover img{
+  animation: 1s icons-move;
 }
 
 .footer-icons div {
