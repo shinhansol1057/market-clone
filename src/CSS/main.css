@@ -59,6 +59,21 @@ main {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  color: blue;
+}
+
+.write-button:link {
+  color : blue;
+}
+.write-button:visited {
+  color : blue;
+}
+.write-button:hover {
+  color : blue;
+}
+.write-button:active {
+  color : blue
 }
 
 .write-button:hover {
