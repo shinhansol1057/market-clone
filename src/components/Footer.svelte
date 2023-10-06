@@ -1,15 +1,15 @@
 <script>
   export let location;
 
-  const moveToHome = () => {
-    window.location.hash = '/'
+  const move = (loc) => {
+    window.location.hash = loc
   }
 </script>
 
 
 <footer>
   <div class="footer-block" >
-    <button class="footer-icons" on:click={moveToHome}>
+    <button class="footer-icons" on:click={()=>move("/")}>
       {#if location==='home'}
       <img src="assets/home_black.svg" alt="home">
       {:else}
@@ -29,9 +29,13 @@
       <img src="assets/chat.svg" alt="chat">
       <div>채팅</div>
     </div>
-    <div class="footer-icons">
-      <img src="assets/user.svg" alt="user">
+    <button class="footer-icons" on:click={()=>move("/my")}>
+      {#if location === "my"}
+      <img src="assets/user_black.svg" alt="user_black">
+      {:else}
+      <img src="assets/user_white.svg" alt="user_white">
+      {/if}
       <div>나의 당근</div>
-    </div>
+    </button>
   </div>
 </footer>
