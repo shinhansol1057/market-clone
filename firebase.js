@@ -7,13 +7,13 @@ import {getAuth} from "firebase/auth"
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBwKWOVjnRICDB3IqJydJXuIdzu4P3-00c",
-  authDomain: "carrot-supercoding.firebaseapp.com",
-  databaseURL: "https://carrot-supercoding-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "carrot-supercoding",
-  storageBucket: "carrot-supercoding.appspot.com",
-  messagingSenderId: "259493841875",
-  appId: "1:259493841875:web:eeba0aae6f376365767d26"
+  apiKey: import.meta.env.VITE_APP_KEY ,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_DB_URL,
+  projectId: import.meta.env.VITE_PR_ID,
+  storageBucket: import.meta.env.VITE_SB,
+  messagingSenderId: import.meta.env.VITE_MESSAGEING_SI,
+  appId: import.meta.env.VITE_APP_ID
 };
 
 // Initialize Firebase
